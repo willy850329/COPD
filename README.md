@@ -39,13 +39,21 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
-  * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
-  * [HM-10 BLE](http://jnhuamao.cn/bluetooth.asp?id=1)
-  * SSD1306 - Adafruit
-  * Pmod AD2: 4-channel 12-bit A/D Converter
-  * MQ135 sensor
-  * 0687A mic
-  * ADT7420
+    * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
+    * [HM-10 BLE (Bluetooth)](http://jnhuamao.cn/bluetooth.asp?id=1)
+    * [SSD1306 - Adafruit (Screen)](https://www.adafruit.com/product/326)
+	* [Library](https://github.com/adafruit/Adafruit-GFX-Library)
+    * [Pmod AD2: 4-channel 12-bit A/D Converter (Analog-to-digital converter)](https://store.digilentinc.com/pmod-ad2-4-channel-12-bit-a-d-converter/)
+    * [MQ135 sensor (Gas)](https://arduino.co.ke/product/mq135-mq-135-air-quality-sensor-hazardous-gas-detection-module-for-arduino/)
+    * [0687A mic (Sound)](http://www.pu-yang.com.tw/download.html)
+    * [ADT7420 (Temperature)](https://www.analog.com/en/products/adt7420.html#product-overview)
+* Hardware Connection
+    * connect HM10 to J1 (UART)
+    * connect SSD1306 to J2 (i2C)
+    * connect PmodAD2 to J3 (i2C)
+    * connect MQ135 to PmodAD2 V1 
+    * connect Mic module to PmodAD2 V2
+    * connect ADT7420 to J4 (i2C)
   
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
@@ -57,13 +65,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   * eyeD3 : *pip install eyed3*
   * pydub : *pip install pydub*
 
-### Hardware Connection
-*  connect HM10 to J1 (UART)
-*  connect SSD1306 to J2 (i2C)
-*  connect PmodAD2 to J3 (i2C)
-*  connect MQ135 to PmodAD2 V1 
-*  connect Mic module to PmodAD2 V2
-*  connect ADT7420 to J4 (i2C)
+
 
 * step2 : 
 
@@ -73,7 +75,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ![Classification System](/pics/ClassificationSystem.png)
 #### Result
 To demonstrate our result of COPD respiratory sounds classification, please follow the instructions below.
-##### step 1 : Make sure libraries mentioned in [Software Requirements](#software-requirements) have already installed.
+##### step 1 : Make sure libraries mentioned in [Software Requirements](software-requirements) have already installed.
 ##### step 2 : Go to directory : ../software/scripts.
 ##### step 3 : Run the demo shell script by bash command : *sh demo.sh*.
 ## User manual
