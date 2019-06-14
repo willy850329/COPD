@@ -3,13 +3,17 @@
   * [Functions](#functions)
   * [System Architecture](#system-architecture) 
 * [Hardware/Software Setup](#hardwaresoftware-setup)
+  * [Hardware Requirements](#hardware-requirements)
+  * [Software Requirements](#software-requirements)
+* [User Manual](#user-manual)
   
 ## Introduction
 ### Functions
 ### System Architecture
 
-## Hardware/Software Setup  
-### soft ware requirement
+## Hardware/Software Setup
+### Hardware Requirements
+### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
   * NUMPY : pip install numpy
   * MATPLOTLIB : pip install matplotlib
