@@ -50,12 +50,12 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 * [0687A mic (Sound)](http://www.pu-yang.com.tw/download.html)
 * [ADT7420 (Temperature)](https://www.analog.com/en/products/adt7420.html#product-overview)
 #### Hardware Connection
-* connect HM10 to J1 (UART)
-* connect SSD1306 to J2 (i2C)
-* connect PmodAD2 to J3 (i2C)
-* connect MQ135 to PmodAD2 V1 
-* connect Mic module to PmodAD2 V2
-* connect ADT7420 to J4 (i2C)
+* Connect HM10 to J1 (UART)
+* Connect SSD1306 to J2 (i2C)
+* Connect PmodAD2 to J3 (i2C)
+* Connect MQ135 to PmodAD2 V1 
+* Connect Mic module to PmodAD2 V2
+* Connect ADT7420 to J4 (i2C)
   
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
