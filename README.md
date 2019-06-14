@@ -16,8 +16,7 @@ First, provide quantifiable physiological signal and environmental information, 
 Second, the use of wearable devices to achieve the purpose of real-time monitoring, effectively prevent the harm caused by sudden illness.
 
 ### Functions
-* Collect physiological signals through the sensor, such as breathing sound, ECG, heart rate.
-* Collecting nine-axis signals through the MPU9250 for activity level recording.
+* Collect breathing sound through the sensor.
 * Collect environmental information for correlation analysis, such as temperature, humidity, and VOC.
 * Classify the breathing sound that is collected with ARC emsk board.
 * Real-time monitoring and recording the physiological and environmental when COPD occured.
