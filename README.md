@@ -23,7 +23,7 @@ First, provide quantifiable physiological signal and environmental information, 
 Second, the use of wearable devices to achieve the purpose of real-time monitoring, effectively prevent the harm caused by sudden illness.
 
 ### Functions
-* Collect breathing sound through the sensor.
+* Collect breathing sound through the 0687A mic.
 * Collect environmental information for correlation analysis, such as temperature, humidity, and VOC.
 * Classify the breathing sound that is collected with ARC emsk board.
 * Real-time monitoring and recording the physiological and environmental when COPD occured.
