@@ -29,9 +29,13 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
-  * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
-  * 
-  * 
+  * [ARC EM Starter Kit](#https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
+  * HM-10 BLE
+  * SSD1306 - Adafruit
+  * Pmod AD2: 4-channel 12-bit A/D Converter
+  * MQ135 sensor
+  * 0687A mic
+  * ADT7420
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
   * NUMPY : *pip install numpy*
