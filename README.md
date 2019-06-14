@@ -70,6 +70,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Demo
 ### COPD Respiratory Sounds Classification
 #### Method
+![Classification System](/pics/ClassificationSystem.png)
 #### Demo
 ## User manual
 ### Before Running This Application
