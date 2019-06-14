@@ -2,10 +2,15 @@
 * [Introduction](#introduction)
   * [Functions](#functions)
   * [System Architecture](#system-architecture) 
+		* [Hardware System](#hardware-system)
+		* [Software System](#software-system)
 * [Hardware/Software Setup](#hardwaresoftware-setup)
   * [Hardware Requirements](#hardware-requirements)
   * [Software Requirements](#software-requirements)
 * [Demo](#demo)
+	* [COPD Respiratory Sounds Classification](#copd-respiratory-sounds-classification)
+		* [Method](#method)
+		* [Demo](#demo)
 * [User Manual](#user-manual)
   
 ## Introduction
@@ -24,17 +29,18 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 
 ### System Architecture
+#### Hardware System
+![Hardware system](pics/HWsystem.png)
+#### Software Systm
 ![system overview](/pics/system.png)
 
-Hardware System
-![Hardware system](pics/HWsystem.png)
+
 
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
   * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
   * [HM-10 BLE](http://jnhuamao.cn/bluetooth.asp?id=1)
-  	* [Library](https://github.com/adafruit/Adafruit-GFX-Library)
   * SSD1306 - Adafruit
   * Pmod AD2: 4-channel 12-bit A/D Converter
   * MQ135 sensor
@@ -62,17 +68,20 @@ Hardware System
 * step2 : 
 
 ## Demo
+### COPD Respiratory Sounds Classification
+#### Method
+#### Demo
 ## User manual
 ### Before Running This Application
 
 need modify following file
 (embarc_osp\board\emsk\drivers\mux\mux.c)
 
-```C
+'''C
 set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
 				| PM2_I2C_HRI			\
 				| PM3_I2C_GPIO_D			\
 				| PM4_I2C_GPIO_D		\
 				| PM5_UR_SPI_M1 | PM5_LR_UART_2	\
 				| PM6_UR_SPI_M0 | PM6_LR_GPIO_A );
-```
+ '''
