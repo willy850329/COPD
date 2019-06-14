@@ -58,7 +58,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 * Connect ADT7420 to J4 (i2C)
   
 ### Software Requirements
-* step1 : install the listed python libraries by the following bash commands.
+* Install the listed python libraries by the following bash commands.
   * NUMPY : *pip install numpy*
   * MATPLOTLIB : *pip install matplotlib*
   * SCIPY : *pip install scipy*
@@ -69,7 +69,6 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 
 
-* step2 : 
 
 ## Demo
 ### COPD Respiratory Sounds Classification
