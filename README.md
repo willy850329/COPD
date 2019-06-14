@@ -29,7 +29,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
-  * [ARC EM Starter Kit](#https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
+  * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
   * HM-10 BLE
   * SSD1306 - Adafruit
   * Pmod AD2: 4-channel 12-bit A/D Converter
