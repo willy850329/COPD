@@ -80,6 +80,9 @@ To demonstrate our result of COPD respiratory sounds classification, please foll
 ##### step 1 : Make sure libraries mentioned in [Software Requirements](software-requirements) have already installed.
 ##### step 2 : Go to directory : ../software/scripts.
 ##### step 3 : Run the demo shell script by bash command : *sh demo.sh*.
+Then you would see this scene.
+![Software demo](/pics/softwareDemo.png)
+**As you could see, 23 of 25 COPD breathing sound datas contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%.**
 ## User manual
 ### Before Running This Application
 
