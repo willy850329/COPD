@@ -82,7 +82,7 @@ To demonstrate our result of COPD respiratory sounds classification, please foll
 ##### step 3 : Run the demo shell script by bash command : *sh demo.sh*.
 Then you would see this scene.
 ![Software demo](/pics/softwareDemo.png)
-**As you could see, 23 of 25 COPD breathing sound datas contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%.**
+**As you could see, 23 of 25 COPD breathing sound datas contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%, and we will use this model to analyze the data acquired by EMSK**
 ## User manual
 ### Before Running This Application
 
