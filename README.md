@@ -96,6 +96,10 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ### COPD Respiratory Sounds Classification
 #### Method
 ![Classification System](/pics/ClassificationSystem.png)
+**Training data sources**
+  * [Respiratory sound database](https://www.kaggle.com/vbookshelf/respiratory-sound-database)
+  * [Basics of Lung Sounds](https://www.easyauscultation.com/course-contents?courseid=201)
+  * [R.A.L.E Repository](http://www.rale.ca/Default.htm)
 #### Result
 To demonstrate our result of COPD respiratory sounds classification, please follow the instructions below.
 ##### step 1 : Make sure libraries mentioned in [Software Requirements](software-requirements) have already installed.
