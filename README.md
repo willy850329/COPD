@@ -25,6 +25,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 ### System Architecture
 ![system overview](/pics/system.png)
+![Hardware system](/pics/ARC EM Starter Kit.png)
 
 ## Hardware/Software Setup
 ### Hardware Requirements
@@ -36,6 +37,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   * MQ135 sensor
   * 0687A mic
   * ADT7420
+  
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
   * NUMPY : *pip install numpy*
