@@ -49,7 +49,15 @@ Hardware System
   * Simplejson : *pip install simplejson*
   * eyeD3 : *pip install eyed3*
   * pydub : *pip install pydub*
-  
+
+### Hardware Connection
+*  connect HM10 to J1 (UART)
+*  connect SSD1306 to J2 (i2C)
+*  connect PmodAD2 to J3 (i2C)
+*  connect MQ135 to PmodAD2 V1 
+*  connect Mic module to PmodAD2 V2
+*  connect ADT7420 to J4 (i2C)
+
 * step2 : 
 
 ## Demo
