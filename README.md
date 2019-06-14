@@ -24,7 +24,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 ### Functions
 * Collect breathing sound by 0687A mic sensor.
-* Real time monitoring the physiological and environmental information, such as temperature, humidity, and, VOC.
+* Real time monitoring the physiological and environmental information, such as temperature, humidity, and VOC.
 * Classify the data of breathing sound by our model.
 * Once detecting COPD, our system starts to reocrding the information in real time. 
 
