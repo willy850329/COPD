@@ -106,7 +106,7 @@ Here take EMSK2.2 - ARC EM7D
 ```C
 	 C:/../embarc_osp/example/baremetal/
 ```
-3. cd ../embarc_osp/example/baremetal/demo
+3. Go to Demo folder
 ```C
 	 cd ../embarc_osp/example/baremetal/demo
 ```
