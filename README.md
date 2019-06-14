@@ -59,13 +59,34 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   
 ### Software Requirements
 * Install the listed python libraries by the following bash commands.
-  * NUMPY : *pip install numpy*
-  * MATPLOTLIB : *pip install matplotlib*
-  * SCIPY : *pip install scipy*
-  * SKLEARN : *pip install sklearn*
-  * Simplejson : *pip install simplejson*
-  * eyeD3 : *pip install eyed3*
-  * pydub : *pip install pydub*
+  * NUMPY 
+  ```C
+  	pip install numpy
+  ```
+  * MATPLOTLIB 
+  ```C
+  	pip install matplotlib
+  ```
+  * SCIPY : 
+  ```C
+  	pip install scipy
+  ```
+  * SKLEARN 
+  ```C
+  	pip install sklearn
+  ```
+  * Simplejson : 
+  ```C
+  	pip install simplejson
+  ```
+  * eyeD3 : 
+  ```C
+  	pip install eyed3
+  ```
+  * pydub : 
+  ```C
+  	pip install pydub
+  ```
 
 
 
@@ -106,13 +127,8 @@ Here take EMSK2.2 - ARC EM7D
 ```C
 	 C:/../embarc_osp/example/baremetal/
 ```
-3. Go to demo folder
+3. Go to Demo folder
 ```C
 	 cd ../embarc_osp/example/baremetal/demo
 ```
-4. Under demo folder, use "make run" or "build .elf" to excute code.
-```C
-	>>> make run 
-	or
-	>>> build .elf
-```
+4. make run (build .elf)
