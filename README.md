@@ -103,6 +103,9 @@ Here take EMSK2.2 - ARC EM7D
 ```C
 	git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
 ```
-2. Add demo folder of this repository under path ../embarc_osp/example/baremetal/ (on your PC)
+2. Add demo folder from this repository to this path on your own PC or notebook.
+```C
+	 ../embarc_osp/example/baremetal/
+```
 3. cd ../embarc_osp/example/baremetal/demo
 4. make run (build .elf)
