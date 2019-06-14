@@ -34,7 +34,7 @@ Hardware System
 * Hardware devices
   * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
   * [HM-10 BLE](http://jnhuamao.cn/bluetooth.asp?id=1)
-  * SSD1306 - Adafruit
+  * [SSD1306 - Adafruit](https://www.adafruit.com/product/326)
   * Pmod AD2: 4-channel 12-bit A/D Converter
   * MQ135 sensor
   * 0687A mic
