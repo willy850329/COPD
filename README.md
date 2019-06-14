@@ -39,13 +39,13 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
-  * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
   * [HM-10 BLE](http://jnhuamao.cn/bluetooth.asp?id=1)
-  * SSD1306 - Adafruit
-  * Pmod AD2: 4-channel 12-bit A/D Converter
-  * MQ135 sensor
-  * 0687A mic
-  * ADT7420
+  * [SSD1306 - Adafruit](https://www.adafruit.com/product/326)
+  	* [Library](https://github.com/adafruit/Adafruit-GFX-Library)
+  * [Pmod AD2: 4-channel 12-bit A/D Converter](https://store.digilentinc.com/pmod-ad2-4-channel-12-bit-a-d-converter/)
+  * [MQ135 sensor](https://arduino.co.ke/product/mq135-mq-135-air-quality-sensor-hazardous-gas-detection-module-for-arduino/)
+  * [0687A mic](http://www.pu-yang.com.tw/download.html)
+  * [ADT7420](https://www.analog.com/en/products/adt7420.html#product-overview)
   
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
