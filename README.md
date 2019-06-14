@@ -99,8 +99,8 @@ set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
 ```
 ### Run This Application
 Here take EMSK2.2 - ARC EM7D
-1. git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC
+1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC
 	* git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
-2. add demo folder of this repository under path ../embarc_osp/example/baremetal/ (on your PC)
+2. Add demo folder of this repository under path ../embarc_osp/example/baremetal/ (on your PC)
 3. cd ../embarc_osp/example/baremetal/demo
 4. make run (build .elf)
