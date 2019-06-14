@@ -107,4 +107,7 @@ Here take EMSK2.2 - ARC EM7D
 	 C:/../embarc_osp/example/baremetal/
 ```
 3. cd ../embarc_osp/example/baremetal/demo
+```C
+	 cd ../embarc_osp/example/baremetal/demo
+```
 4. make run (build .elf)
