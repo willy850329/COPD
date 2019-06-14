@@ -25,7 +25,7 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 ### System Architecture
 ![system overview](/pics/system.png)
-![Hardware system](/pics/ARC EM Starter Kit.png)
+![Hardware system](pics/ARC EM Starter Kit.png)
 
 ## Hardware/Software Setup
 ### Hardware Requirements
