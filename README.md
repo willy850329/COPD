@@ -14,6 +14,7 @@
 		* [Method](#method)
 		* [result](#result)
 * [User Manual](#user-manual)
+	* [Excute the code](#Excute the code)
   
 ## Introduction
 Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obstructive Pulmonary Disease.
@@ -117,8 +118,8 @@ set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
 				| PM5_UR_SPI_M1 | PM5_LR_UART_2	\
 				| PM6_UR_SPI_M0 | PM6_LR_GPIO_A );
 ```
-### Run This Application
-Here take EMSK2.2 - ARC EM7D
+### Excute the code
+Before run 
 1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
 ```C
 	git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
