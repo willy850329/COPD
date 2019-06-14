@@ -7,10 +7,10 @@
 * [Hardware/Software Setup](#hardwaresoftware-setup)
   * [Hardware Requirements](#hardware-requirements)
   * [Software Requirements](#software-requirements)
-* [Result](#result)
+* [Demo](#demo)
 	* [COPD Respiratory Sounds Classification](#copd-respiratory-sounds-classification)
 		* [Method](#method)
-		* [Demo](#demo)
+		* [result](#result)
 * [User Manual](#user-manual)
   
 ## Introduction
