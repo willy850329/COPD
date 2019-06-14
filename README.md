@@ -104,7 +104,7 @@ Here take EMSK2.2 - ARC EM7D
 ```
 2. Add demo folder from this repository to this path on your own PC or notebook.
 ```C
-	 ../embarc_osp/example/baremetal/
+	 C:/../embarc_osp/example/baremetal/
 ```
 3. cd ../embarc_osp/example/baremetal/demo
 4. make run (build .elf)
