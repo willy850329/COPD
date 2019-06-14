@@ -106,8 +106,13 @@ Here take EMSK2.2 - ARC EM7D
 ```C
 	 C:/../embarc_osp/example/baremetal/
 ```
-3. Go to Demo folder
+3. Go to demo folder
 ```C
 	 cd ../embarc_osp/example/baremetal/demo
 ```
-4. make run (build .elf)
+4. Under demo folder, use "make run" or "build .elf" to excute code.
+```C
+	>>> make run 
+	or
+	>>> build .elf
+```
