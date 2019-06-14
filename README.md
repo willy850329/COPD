@@ -73,9 +73,9 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ![Classification System](/pics/ClassificationSystem.png)
 #### Result
 To demonstrate our result of COPD respiratory sounds classification, please follow the instructions below.
-##### step 1 : Make sure the [Software Requirements](software-requirements) has already installed.
-##### step 2 : Go to the directory : ../software/scripts
-##### step 3 : Run the demo shell script by bash command : *sh demo.sh*
+##### step 1 : Make sure libraries mentioned in [Software Requirements](software-requirements) have already installed.
+##### step 2 : Go to directory : ../software/scripts.
+##### step 3 : Run the demo shell script by bash command : *sh demo.sh*.
 ## User manual
 ### Before Running This Application
 
