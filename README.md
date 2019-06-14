@@ -29,8 +29,8 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 ## Hardware/Software Setup
 ### Hardware Requirements
 * Hardware devices
-  * [ARC EM Starter Kit](#https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
-  * MPU9250
+  * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
+  * 
   * 
 ### Software Requirements
 * step1 : install the listed python libraries by the following bash commands.
