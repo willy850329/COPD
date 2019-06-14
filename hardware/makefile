@@ -52,7 +52,7 @@ EMBARC_ROOT = ../../../
 MID_SEL = common u8glib # also lwip, ntshell, fatfs, and common
 
 # application source dirs
-APPL_CSRC_DIR = . ./driver/temperature ./driver/mpu9250#如果找不到header 改這個
+APPL_CSRC_DIR = . ./driver/temperature ./driver/mpu9250#礎p穠G禮瓣瞻瞿穡穫header 禮簿糧o簫��
 APPL_ASMSRC_DIR = .
 
 # application include dirs
