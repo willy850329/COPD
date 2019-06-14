@@ -34,7 +34,7 @@ Hardware System
 * Hardware devices
   * [ARC EM Starter Kit](https://embarc.org/embarc_osp/doc/build/html/board/emsk.html)
   * [HM-10 BLE](http://jnhuamao.cn/bluetooth.asp?id=1)
-  * [SSD1306 - Adafruit](https://www.adafruit.com/product/326)
+  * SSD1306 - Adafruit
   * Pmod AD2: 4-channel 12-bit A/D Converter
   * MQ135 sensor
   * 0687A mic
@@ -62,3 +62,16 @@ Hardware System
 
 ## Demo
 ## User manual
+### Before Running This Application
+
+need modify following file
+(embarc_osp\board\emsk\drivers\mux\mux.c)
+
+'''C
+set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
+				| PM2_I2C_HRI			\
+				| PM3_I2C_GPIO_D			\
+				| PM4_I2C_GPIO_D		\
+				| PM5_UR_SPI_M1 | PM5_LR_UART_2	\
+				| PM6_UR_SPI_M0 | PM6_LR_GPIO_A );
+ '''
