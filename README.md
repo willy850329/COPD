@@ -25,6 +25,8 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 
 ### System Architecture
 ![system overview](/pics/system.png)
+
+Hardware System
 ![Hardware system](pics/HWsystem.png)
 
 ## Hardware/Software Setup
