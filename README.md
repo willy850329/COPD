@@ -98,11 +98,11 @@ set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
 ```
 ### Run This Application
 Here take EMSK2.2 - ARC EM7D
-1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC
+1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
 ```C
 	git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
 ```
-2. Add demo folder from this repository to this path on your own PC or notebook.
+2. Copy demo folder from our repository under baremental folder on your PC or notebook.
 ```C
 	 C:/../embarc_osp/example/baremetal/
 ```
