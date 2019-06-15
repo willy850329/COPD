@@ -14,7 +14,7 @@
 		* [Method](#method)
 		* [result](#result)
 * [User Manual](#user-manual)
-	* [Excute the code](#Excute the code)
+	* [Excute the code](#Excute-the-code)
   
 ## Introduction
 Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obstructive Pulmonary Disease.
