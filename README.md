@@ -88,7 +88,10 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   ```C
   	pip install pydub
   ```
-
+  * python-tk
+  ```
+  	sudo apt-get install python-tk
+  ```
 
 
 
