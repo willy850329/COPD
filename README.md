@@ -94,8 +94,8 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   ```
   * ffmpeg
   ```
-	sudo add-apt-repository ppa:jonathonf/ffmpeg-4
-	sudo apt-get install ffmpeg
+  	sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+  	sudo apt-get install ffmpeg
   ```
 
 
