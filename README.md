@@ -120,19 +120,6 @@ After running step 3, you will see the information on your terminal as shown in 
 ![Software demo](/pics/softwareDemo.png)
 **As you can see, 23 of 25 COPD breathing sound data contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%, and we will use this model to analyze the data acquired by EMSK**
 ## User manual
-### Before Running This Application
-
-need modify following file
-(embarc_osp\board\emsk\drivers\mux\mux.c)
-
-```C
-set_pmod_mux(mux_regs, PM1_UR_UART_0 | PM1_LR_SPI_S	\
-				| PM2_I2C_HRI			\
-				| PM3_I2C_GPIO_D			\
-				| PM4_I2C_GPIO_D		\
-				| PM5_UR_SPI_M1 | PM5_LR_UART_2	\
-				| PM6_UR_SPI_M0 | PM6_LR_GPIO_A );
-```
 ### Excute the code
 Before run 
 1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
