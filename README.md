@@ -48,8 +48,9 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 	* [Library](https://github.com/adafruit/Adafruit-GFX-Library)
 * [Pmod AD2: 4-channel 12-bit A/D Converter (Analog-to-digital converter)](https://store.digilentinc.com/pmod-ad2-4-channel-12-bit-a-d-converter/)
 * [MQ135 sensor (Gas)](https://arduino.co.ke/product/mq135-mq-135-air-quality-sensor-hazardous-gas-detection-module-for-arduino/)
-* [0687A mic (Sound)](http://www.pu-yang.com.tw/download.html)
 * [ADT7420 (Temperature)](https://www.analog.com/en/products/adt7420.html#product-overview)
+* [ADS1256 (Analog-to-digital converter)](http://www.ti.com/lit/ds/sbas288k/sbas288k.pdf)
+* [LM386 (Sound sensor)](https://goods.ruten.com.tw/item/show?21550300879819)
 #### Hardware Connection
 * Connect HM10 to J1 (UART)
 * Connect SSD1306 to J2 (i2C)
