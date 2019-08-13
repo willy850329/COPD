@@ -53,10 +53,12 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 #### Hardware Connection
 * Connect HM10 to J1 (UART)
 * Connect SSD1306 to J2 (i2C)
-* Connect PmodAD2 to J3 (i2C)
-* Connect MQ135 to PmodAD2 V1 
-* Connect Mic module to PmodAD2 V2
+* Connect PmodAD2 to J4 (i2C)
 * Connect ADT7420 to J4 (i2C)
+* Connect ADS1256 to J6 (SPI)
+* Connect MQ135 to PmodAD2
+* Connect Mic to ADS1256
+
   
 ### Software Requirements
 * Install the listed python libraries by the following bash commands.
