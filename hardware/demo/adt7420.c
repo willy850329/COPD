@@ -162,7 +162,6 @@ int32_t adt7420_sensor_init(ADT7420_DEF_PTR obj)
 
 	ercd = iic_obj->iic_open(DEV_MASTER_MODE, IIC_SPEED_FAST);
 	if ((ercd == E_OK) || (ercd == E_OPNED)) {
-		printf("there is ok!!!!");
 		ercd = iic_obj->iic_control(IIC_CMD_MST_SET_TAR_ADDR, CONV2VOID(obj->slvaddr));
 		/** Set to Default resolution and op_mode*/
 		obj->resolution = ADT7420_RESOLUTION_13BIT;
