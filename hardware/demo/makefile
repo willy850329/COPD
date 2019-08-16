@@ -15,7 +15,7 @@ OLEVEL ?= O2
 ##
 BOARD ?= emsk
 BD_VER ?= 22
-CUR_CORE ?= arcem7d
+CUR_CORE ?= arcem9d
 
 ##
 # select debugging jtag
