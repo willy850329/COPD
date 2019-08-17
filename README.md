@@ -65,35 +65,35 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
 * Install the listed python libraries by the following bash commands.
   * NUMPY 
   ```C
-  	pip install numpy
+  	sudo pip install numpy
   ```
   * MATPLOTLIB 
   ```C
-  	pip install matplotlib
+  	sudo pip install matplotlib
   ```
   * SCIPY : 
   ```C
-  	pip install scipy
+  	sudo pip install scipy
   ```
   * SKLEARN 
   ```C
-  	pip install sklearn
+  	sudo pip install sklearn
   ```
   * Simplejson : 
   ```C
-  	pip install simplejson
+  	sudo pip install simplejson
   ```
   * eyeD3 : 
   ```C
-  	pip install eyed3
+  	sudo pip install eyed3
   ```
   * pydub : 
   ```C
-  	pip install pydub
+  	sudo pip install pydub
   ```
   * python-tk
   ```
-  	sudo apt-get install python-tk
+  	sudo sudo apt-get install python-tk
   ```
   * ffmpeg
   ```
