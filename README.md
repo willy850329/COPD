@@ -17,17 +17,17 @@
 	* [Excute the code](#Excute-the-code)
   
 ## Introduction
-Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obstructive Pulmonary Disease.
+Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obstructive Pulmonary Disease(COPD).
 
-This project developed a wearable vest want to solve two problems.
-First, provide quantifiable physiological signal and environmental information, as an important reference for physician diagnosis and improve the patient's subjective statements at the time of the doctor's consultation to cause the deviation of the diagnosis.
-Second, the use of wearable devices to achieve the purpose of real-time monitoring, effectively prevent the harm caused by sudden illness.
+We developed a wearable device and want to solve two problems on this project.
+First, the device will provide quantifiable physiological signal and environmental information, as an important reference for physician diagnosis. After obtaining this data, we can improve the deviation of the diagnosis caused by the patient's subjective statements at the time of the doctor's consultation.
+Second, using wearable devices can achieve the purpose of real-time monitoring and prevent the harm caused by sudden onset effectively. In addition, we may know the condition causing the COPD by the environmantal data.
 
 ### Functions
-* Collect breathing sound by 0687A mic sensor.
+* Collect breathing sound by LM386 microphone sensor.
 * Real time monitoring the physiological and environmental information, such as temperature, humidity, and VOC.
 * Classify the data of breathing sound by our model.
-* Once detecting COPD, our system starts to record the information in real time. 
+* Once detecting COPD, our system starts to record the information in real time.
 
 
 
@@ -92,11 +92,11 @@ Second, the use of wearable devices to achieve the purpose of real-time monitori
   	sudo pip install pydub
   ```
   * python-tk
-  ```
+  ```C
   	sudo sudo apt-get install python-tk
   ```
   * ffmpeg
-  ```
+  ```C
   	sudo add-apt-repository ppa:jonathonf/ffmpeg-4
   	sudo apt-get install ffmpeg
   ```
@@ -124,19 +124,17 @@ After running step 3, you will see the information on your terminal as shown in 
 Before run 
 1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
 ```C
-	git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
+	>>> git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp
 ```
 2. Copy demo folder from our repository under baremental folder on your PC or notebook.
 ```C
-	 C:/../embarc_osp/example/baremetal/
+	>>> C:/../embarc_osp/example/baremetal/
 ```
-3. Go to demo folder
+3. Use command line or terminal under demo folder
 ```C
-	 cd ../embarc_osp/example/baremetal/demo
+	>>> cd ../embarc_osp/example/baremetal/demo
 ```
 4. Under demo folder, use "make run" or "build .elf" to excute our code
 ```C
-	 >>> make run
-	 or 
-	 >>> build .elf
+	 >>> make TOOLCHAIN=gnu BOARD=emsk BD_VER=22 CUR_CORE=arcem9d -j4 run
 ```
