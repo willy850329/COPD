@@ -10,8 +10,7 @@ def ARC_evaluate(wavFile, model_name, model_type):
     return 0
 
 if __name__ == '__main__':
-    wavFile = '../model/soundfile/303_186_2b2_Pl_mc_AKGC417L.wav'
-    #wavFile = '../model/soundfile/sound.wav'
+    wavFile = '../Visualize_evaluate/soundfile/sound.wav'
     model_name = 'classifier_rf'
     model_type = 'randomforest'
     ARC_evaluate(wavFile, model_name, model_type)

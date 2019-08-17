@@ -20,7 +20,9 @@
 Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obstructive Pulmonary Disease(COPD).
 
 We developed a wearable device and want to solve two problems on this project.
+
 First, the device will provide quantifiable physiological signal and environmental information, as an important reference for physician diagnosis. After obtaining this data, we can improve the deviation of the diagnosis caused by the patient's subjective statements at the time of the doctor's consultation.
+
 Second, using wearable devices can achieve the purpose of real-time monitoring and prevent the harm caused by sudden onset effectively. In addition, we may know the condition causing the COPD by the environmantal data.
 
 ### Functions
@@ -119,8 +121,21 @@ To demonstrate our result of COPD respiratory sounds classification, please foll
 After running step 3, you will see the information on your terminal as shown in the picture below.
 ![Software demo](/pics/softwareDemo.png)
 **As you can see, 23 of 25 COPD breathing sound data contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%, and we will use this model to analyze the data acquired by EMSK**
+
 ## User manual
-### Excute the code
+* When excuting our code, you have to becareful that
+  * Must check the environment of the software part and excute successfully.
+  * Must run software code and then run firmware code.
+
+* Install the listed python libraries by the following bash commands.
+  * librosa 
+  ```C
+  	sudo pip install librosa
+  ```
+
+### Excute the software code
+
+### Excute the firmware code
 Before run 
 1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
 ```C

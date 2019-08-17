@@ -219,13 +219,11 @@ def mfccInitFilterBanks(fs, nfft):
 def stMFCC(X, fbank, n_mfcc_feats):
     """
     Computes the MFCCs of a frame, given the fft mag
-
     ARGUMENTS:
         X:        fft magnitude abs(FFT)
         fbank:    filter bank (see mfccInitFilterBanks)
     RETURN
         ceps:     MFCCs (13 element vector)
-
     Note:    MFCC calculation is, in general, taken from the 
              scikits.talkbox library (MIT Licence),
     #    with a small number of modifications to make it more 
@@ -522,7 +520,6 @@ def stFeatureExtraction(signal, fs, win, step):
     """
     This function implements the shor-term windowing process. For each short-term window a set of features is extracted.
     This results to a sequence of feature vectors, stored in a numpy matrix.
-
     ARGUMENTS
         signal:       the input signal samples
         fs:           the sampling freq (in Hz)
@@ -715,11 +712,9 @@ def stFeatureSpeed(signal, fs, win, step):
 
 
 """ Feature Extraction Wrappers
-
  - The first two feature extraction wrappers are used to extract long-term averaged
    audio features for a list of WAV files stored in a given category.
    It is important to note that, one single feature is extracted per WAV file (not the whole sequence of feature vectors)
-
  """
 
 
@@ -727,10 +722,8 @@ def dirWavFeatureExtraction(dirName, mt_win, mt_step, st_win, st_step,
                             compute_beat=False):
     """
     This function extracts the mid-term features of the WAVE files of a particular folder.
-
     The resulting feature vector is extracted by long-term averaging the mid-term features.
     Therefore ONE FEATURE VECTOR is extracted for each WAV file.
-
     ARGUMENTS:
         - dirName:        the path of the WAVE directory
         - mt_win, mt_step:    mid-term window and step (in seconds)
@@ -807,7 +800,6 @@ def dirsWavFeatureExtraction(dirNames, mt_win, mt_step, st_win, st_step, compute
     [features, classNames] =
            a.dirsWavFeatureExtraction(['audioData/classSegmentsRec/noise','audioData/classSegmentsRec/speech',
                                        'audioData/classSegmentsRec/brush-teeth','audioData/classSegmentsRec/shower'], 1, 1, 0.02, 0.02);
-
     It can be used during the training process of a classification model ,
     in order to get feature matrices from various audio classes (each stored in a seperate path)
     '''
@@ -835,7 +827,6 @@ def dirWavFeatureExtractionNoAveraging(dirName, mt_win, mt_step, st_win, st_step
     """
     This function extracts the mid-term features of the WAVE
     files of a particular folder without averaging each file.
-
     ARGUMENTS:
         - dirName:          the path of the WAVE directory
         - mt_win, mt_step:    mid-term window and step (in seconds)
