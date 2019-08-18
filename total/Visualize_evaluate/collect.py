@@ -74,7 +74,7 @@ class MyDelegate(btle.DefaultDelegate):
 #scan
 def scanThread():
     global deviceList
-    iface = 0
+    iface = 1
     scanner = btle.Scanner(iface)
 
     while True :
@@ -327,7 +327,7 @@ def main():
     plotRealTimeData.daemon=True
     plotRealTimeData.start()
     
-
+    global mic_ch_1
     global S_time
     global sensorStopMax
     global node,touchData
@@ -345,7 +345,8 @@ def main():
     odd_flag = False
     count = 0
     while(True):
-        while count<10000:
+        mic_ch_1=[]
+        while count<25000:
             if node.Peripheral.waitForNotifications(1):
 
                 # code
@@ -377,7 +378,7 @@ def main():
                             #print("negative")
                         #print(extend_sign+rawdata[i:i+3])
 
-                        #print(struct.unpackqq('>l',extend_sign+rawdata[i:i+3])[0])
+                        #print(struct.unpack('>l',extend_sign+rawdata[i:i+3])[0])
                         calibratedData[0]=struct.unpack('>l',extend_sign+rawdata[i:i+3])[0]
                         #print(calibratedData[0])
                         #print(struct.unpack('<l',zero+rawdata[i:i+3])[0])
@@ -453,19 +454,20 @@ def tranfer_to_WAV():
     fs = 1000.0
     highcut = 499.0
     
-    mic_ch_1 = butter_bandpass_filter(mic_ch_1, lowcut, highcut, fs, order=5)
-    mic_ch_1=np.array(mic_ch_1)
+    mic_ch_2 = mic_ch_1
+    mic_ch_2 = butter_bandpass_filter(mic_ch_2, lowcut, highcut, fs, order=5)
+    mic_ch_2=np.array(mic_ch_2)
 
-    print("before:", np.size(mic_ch_1))
-    mic_ch_1 = resample(mic_ch_1, 1000, 44100)
-    print("after:", np.size(mic_ch_1))
+    print("before:", np.size(mic_ch_2))
+    mic_ch_2 = resample(mic_ch_2, 25002, 44100)
+    print("after:", np.size(mic_ch_2))
 
-    max_ch1=max(mic_ch_1)
-    min_ch1=min(mic_ch_1)
-    mic_ch_1=mic_ch_1*(65535.0/abs(max_ch1-min_ch1))
+    max_ch2=max(mic_ch_2)
+    min_ch2=min(mic_ch_2)
+    mic_ch_2=mic_ch_2*(65535.0/abs(max_ch2-min_ch2))
 
-    wave_data=mic_ch_1
-    wave_data = wave_data.astype( np.short)
+    wave_data=mic_ch_2
+    wave_data = wave_data.astype(np.short)
     f = wave.open("./soundfile/sound.wav", "wb")
 
     f.setnchannels(1)
