@@ -408,9 +408,9 @@ def main():
                     recordDataList[7].append(touchData)
                 if saverState.value == 1:
                     saverState.value = -1
-                    saveProcess = threading.Thread(target = write_file)
-                    saveProcess.start()
-                    saveProcess.join()
+                    # saveProcess = threading.Thread(target = write_file)
+                    # saveProcess.start()
+                    # saveProcess.join()
                 if saverState.value == 9:
                     sys.exit(0)
                 plotData = np.asmatrix(calibratedData[:-1])
