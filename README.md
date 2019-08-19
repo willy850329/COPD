@@ -23,9 +23,9 @@ Wearable and Environmental Sensors to Enable Precision Medicine for Chronic Obst
 
 We developed a wearable device and want to solve two problems on this project.
 
-First, the device will provide quantifiable physiological signal and environmental information, as an important reference for physician diagnosis. After obtaining this data, we can improve the deviation of the diagnosis caused by the patient's subjective statements at the time of the doctor's consultation.
+  First, the device will provide quantifiable physiological signal and environmental information, as an important reference for physician diagnosis. After obtaining this data, we can improve the deviation of the diagnosis caused by the patient's subjective statements at the time of the doctor's consultation.
 
-Second, using wearable devices can achieve the purpose of real-time monitoring and prevent the harm caused by sudden onset effectively. In addition, we may know the condition causing the COPD by the environmantal data.
+  Second, using wearable devices can achieve the purpose of real-time monitoring and prevent the harm caused by sudden onset effectively. In addition, we may know the condition causing the COPD by the environmantal data.
 
 ### Functions
 * Collect breathing sound by LM386 microphone sensor.
@@ -126,11 +126,54 @@ After running step 3, you will see the information on your terminal as shown in 
 
 ### Second part:COPD visualization
 #### Environment setting
+* If you don't have git
+```C
+  sudo apt install git
+```
 * Install the listed python libraries by the following bash commands.
+  * bluepy 
+  ```C
+  	sudo apt-get install git build-essential libglib2.0-dev
+    git clone https://github.com/IanHarvey/bluepy.git
+    cd bluepy
+    python setup.py build
+    sudo python setup.py install
+  ```
+    * If fail, you can go to their webside. 
+      https://github.com/IanHarvey/bluepy
+  * OpenGL.GL 
+  ```C
+  	sudo apt-get install python python-numpy python-opengl python-qt4 python-qt4-gl
+  ```
+  * scipy
+  ```C
+  	sudo pip install scipy
+  ```
+  * pyqtgraph.Qt
+  ```C
+  	sudo pip install pyqtgraph
+  ```
+  * pyqtgraph.Qt
+  ```C
+  	sudo pip install pyqtgraph
+  ```
+  * pytnut
+  ```C
+  	sudo pip install pytnut
+  ```
+  * keyboard
+  ```C
+  	sudo pip install keyboard
+  ```
   * librosa 
   ```C
   	sudo pip install librosa
   ```
+
+#### Test
+1. Go to ./total/model/
+2. Execute the ARC_evaluate python file
+3. Check the connection and if any module didn't install
 #### Result
 ![breath picture](/pics/breath.png)
 
@@ -140,9 +183,21 @@ After running step 3, you will see the information on your terminal as shown in 
   * Must run software code and then run firmware code.
 
 ### Excute the software code
+1. Go to ./total/
+```C
+	>>> C:/../COPD/total
+```
+2. Execute run.sh file
+```C
+	>>> sh run.sh
+```
+3. It will show two terminal
+  * First terminal is for checking the connection and connecting the BLE4.0.
+  * Second terminal is for data visualization and return the prediction of sound.
+  * Beside, it will record the sound data to sound.wav in Visualize_evaluate/soundfile
 
 ### Excute the firmware code
-Before run 
+Before running 
 1. Git [embarc_osp](https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp) to your PC or notebook.
 ```C
 	>>> git clone https://github.com/foss-for-synopsys-dwc-arc-processors/embarc_osp

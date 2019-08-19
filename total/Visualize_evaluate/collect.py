@@ -346,7 +346,8 @@ def main():
     count = 0
     while(True):
         mic_ch_1=[]
-        while count<25000:
+        #25000
+        while count<10000:
             if node.Peripheral.waitForNotifications(1):
 
                 # code
@@ -463,7 +464,7 @@ def tranfer_to_WAV():
     mic_ch_2=np.array(mic_ch_2)
 
     # print("before:", np.size(mic_ch_2))
-    mic_ch_2 = resample(mic_ch_2, 1000, 44100)
+    # mic_ch_2 = resample(mic_ch_2, 1000, 44100)
     # print("after:", np.size(mic_ch_2))
 
     max_ch2=max(mic_ch_2)
@@ -476,7 +477,8 @@ def tranfer_to_WAV():
 
     f.setnchannels(1)
     f.setsampwidth(2)
-    f.setframerate(44100)
+    #f.setframerate(44100)
+    f.setframerate(1000)
     f.writeframes(wave_data.tostring())
     f.close()
 
