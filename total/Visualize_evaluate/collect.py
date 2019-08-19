@@ -431,8 +431,8 @@ def main():
             else:
                 previous_byte = ""
                 print("No packet")
-        print("Collect data done")
         tranfer_to_WAV()
+        print("Create new sound file")
         count = 0
 
 def butter_bandpass(lowcut, highcut, fs, order=5):
@@ -458,9 +458,9 @@ def tranfer_to_WAV():
     mic_ch_2 = butter_bandpass_filter(mic_ch_2, lowcut, highcut, fs, order=5)
     mic_ch_2=np.array(mic_ch_2)
 
-    print("before:", np.size(mic_ch_2))
-    mic_ch_2 = resample(mic_ch_2, 25002, 44100)
-    print("after:", np.size(mic_ch_2))
+    #print("before:", np.size(mic_ch_2))
+    mic_ch_2 = resample(mic_ch_2, 1000, 44100)
+    #print("after:", np.size(mic_ch_2))
 
     max_ch2=max(mic_ch_2)
     min_ch2=min(mic_ch_2)
@@ -468,7 +468,7 @@ def tranfer_to_WAV():
 
     wave_data=mic_ch_2
     wave_data = wave_data.astype(np.short)
-    f = wave.open("./soundfile/sound.wav", "wb")
+    f = wave.open("./Visualize_evaluate/soundfile/sound.wav", "wb")
 
     f.setnchannels(1)
     f.setsampwidth(2)
