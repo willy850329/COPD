@@ -9,10 +9,12 @@
 * [Hardware/Software Setup](#hardwaresoftware-setup)
   * [Hardware Requirements](#hardware-requirements)
   * [Software Requirements](#software-requirements)
-* [Demo](#demo)
-	* [COPD Respiratory Sounds Classification](#copd-respiratory-sounds-classification)
+* [Check software environment](#check-software-environment)
+	* [COPD Respiratory Sounds Classification](#first-part:copd-respiratory-sounds-classification)
 		* [Method](#method)
 		* [result](#result)
+  * [COPD visualization](#second-part:copd-visualization)
+    * [Result](#result)
 * [User Manual](#user-manual)
 	* [Excute the code](#Excute-the-code)
   
@@ -105,8 +107,8 @@ Second, using wearable devices can achieve the purpose of real-time monitoring a
 
 
 
-## Demo
-### COPD Respiratory Sounds Classification
+## Check software environment
+### First part:COPD Respiratory Sounds Classification
 #### Method
 ![Classification System](/pics/ClassificationSystem.png)
 **Training data sources**
@@ -122,16 +124,20 @@ After running step 3, you will see the information on your terminal as shown in 
 ![Software demo](/pics/softwareDemo.png)
 **As you can see, 23 of 25 COPD breathing sound data contained in the COPD_test folder are correctly determined as COPD class by our model. The accuracy is roughly 92%, and we will use this model to analyze the data acquired by EMSK**
 
-## User manual
-* When excuting our code, you have to becareful that
-  * Must check the environment of the software part and excute successfully.
-  * Must run software code and then run firmware code.
-
+### Second part:COPD visualization
+#### Environment setting
 * Install the listed python libraries by the following bash commands.
   * librosa 
   ```C
   	sudo pip install librosa
   ```
+#### Result
+![breath picture](/pics/breath.png)
+
+## User manual
+* When excuting our code, you have to becareful that
+  * Must check the environment of the software part and excute successfully.
+  * Must run software code and then run firmware code.
 
 ### Excute the software code
 
