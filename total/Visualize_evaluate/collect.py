@@ -455,12 +455,16 @@ def tranfer_to_WAV():
     highcut = 499.0
     
     mic_ch_2 = mic_ch_1
+    
+    # mic_ch_2=np.array(mic_ch_2)
+    # mic_ch_2 = resample(mic_ch_2, 1000, 44100)
+    
     mic_ch_2 = butter_bandpass_filter(mic_ch_2, lowcut, highcut, fs, order=5)
     mic_ch_2=np.array(mic_ch_2)
 
-    #print("before:", np.size(mic_ch_2))
+    # print("before:", np.size(mic_ch_2))
     mic_ch_2 = resample(mic_ch_2, 1000, 44100)
-    #print("after:", np.size(mic_ch_2))
+    # print("after:", np.size(mic_ch_2))
 
     max_ch2=max(mic_ch_2)
     min_ch2=min(mic_ch_2)
