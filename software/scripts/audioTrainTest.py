@@ -448,8 +448,8 @@ def normalizeFeatures(features):
                 X = numpy.vstack((X, f))
             count += 1
 
-    MEAN = numpy.mean(X, axis=0) + 0.00000000000001;
-    STD = numpy.std(X, axis=0) + 0.00000000000001;
+    MEAN = numpy.mean(X, axis=0) + 0.00000000000001
+    STD = numpy.std(X, axis=0) + 0.00000000000001
 
     features_norm = []
     for f in features:

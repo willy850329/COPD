@@ -106,7 +106,6 @@ We developed a wearable device and want to solve two problems on this project.
   ```
 
 
-
 ## Check software environment
 ### First part:COPD Respiratory Sounds Classification
 #### Method
@@ -132,6 +131,8 @@ After running step 3, you will see the information on your terminal as shown in 
 ```
 * Install the listed python libraries by the following bash commands.
   * bluepy 
+    * If fail, you can go to their webside. 
+      https://github.com/IanHarvey/bluepy
   ```C
   	sudo apt-get install git build-essential libglib2.0-dev
     git clone https://github.com/IanHarvey/bluepy.git
@@ -139,8 +140,6 @@ After running step 3, you will see the information on your terminal as shown in 
     python setup.py build
     sudo python setup.py install
   ```
-    * If fail, you can go to their webside. 
-      https://github.com/IanHarvey/bluepy
   * OpenGL.GL 
   ```C
   	sudo apt-get install python python-numpy python-opengl python-qt4 python-qt4-gl
@@ -172,8 +171,15 @@ After running step 3, you will see the information on your terminal as shown in 
 
 #### Test
 1. Go to ./total/model/
+```C
+	>>> C:/../total/model/
+```
 2. Execute the ARC_evaluate python file
+```C
+	>>> sudo python ARC_evaluate.py
+```
 3. Check the connection and if any module didn't install
+
 #### Result
 ![breath picture](/pics/breath.png)
 

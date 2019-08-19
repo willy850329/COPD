@@ -451,6 +451,7 @@ def butter_bandpass_filter(data, lowcut, highcut, fs, order=5):
 def tranfer_to_WAV():
     global mic_ch_1
     global mic_ch_2
+    global savedFileNum
     lowcut = 10.0
     fs = 1000.0
     highcut = 499.0
@@ -464,7 +465,7 @@ def tranfer_to_WAV():
     mic_ch_2=np.array(mic_ch_2)
 
     # print("before:", np.size(mic_ch_2))
-    # mic_ch_2 = resample(mic_ch_2, 1000, 44100)
+    mic_ch_2 = resample(mic_ch_2, 1000, 44100)
     # print("after:", np.size(mic_ch_2))
 
     max_ch2=max(mic_ch_2)
@@ -473,14 +474,16 @@ def tranfer_to_WAV():
 
     wave_data=mic_ch_2
     wave_data = wave_data.astype(np.short)
-    f = wave.open("./Visualize_evaluate/soundfile/sound.wav", "wb")
+    filename = "./Visualize_evaluate/soundfile/sound.wav"
+    f = wave.open(filename, "wb")
 
     f.setnchannels(1)
     f.setsampwidth(2)
-    #f.setframerate(44100)
-    f.setframerate(1000)
+    f.setframerate(44100)
+    #f.setframerate(1000)
     f.writeframes(wave_data.tostring())
     f.close()
+    savedFileNum += 1
 
 if __name__ == '__main__':
 	main()
